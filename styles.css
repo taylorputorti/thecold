@@ -16,29 +16,6 @@ h2:first-of-type {
     margin-top: 0.5em;
 }
 
-table,
-tr,
-td {
-    border: 2px solid lightgrey;
-}
-
-table {
-    border-collapse: collapse;
-    margin: 0 auto;
-}
-
-tr {
-    height: 20px;
-}
-
-td {
-    width: 20px;
-}
-
-input[type=number] {
-    width: 6em;
-}
-
 .jumbotron {
   background-image: url('https://vignette.wikia.nocookie.net/silent/images/2/28/The_Town_of_Silent_Hill.jpg/revision/latest/scale-to-width-down/640?cb=20140324181620');
   background-size: 100%;
