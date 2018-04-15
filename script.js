@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   $('#start').click(function(){
     command.empty();
-    textblock.append('<p>it\'s snowing outside</p>');
+    textblock.append('<p>it\'s started snowing outside</p><p>you can see the flurries out your living room window</p><p>strange things have been happening since the first snow</p><p>people going missing and disturbing noises in the night</p>');
     command.append('<button class="btn move">move to window?</button> <button class="btn stay">stay put</button>');
 
     //TREE A
