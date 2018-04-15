@@ -15,7 +15,10 @@ $(document).ready(function(){
       clear();
       textblock.append('<p>you see a mysterious shape moving in the distance</p>');
       command.append('<button class="move btn">check your door is locked</button> <button class="stay btn">remain still and try to get a closer look</button>');
-    })
+      $('.stay').click(function(){
+        clear();
+        textblock.append('<p>the shambling figure draws closer, wearing clothing unappropriate for the weather</p><p>you think you may recognize the figure</p>');
+    }) })
 
     $('.stay').click(function(){
       clear();
@@ -24,8 +27,10 @@ $(document).ready(function(){
       $('.move').click(function(){
         clear();
         textblock.append('<p>you see a mysterious shape moving in the distance</p>');
-        command.append('<button class="move btn">check your door is locked</button> <button class="stay btn">remain still and try to get a closer look</button>')
-      })
-    })
+        command.append('<button class="move btn">check your door is locked</button> <button class="stay btn">remain still and try to get a closer look</button>');
+        $('.stay').click(function(){
+          clear();
+          textblock.append('<p>the shambling figure draws closer, wearing clothing unappropriate for the weather</p><p>you think you may recognize the figure</p>');
+      })})})
   })
 })
