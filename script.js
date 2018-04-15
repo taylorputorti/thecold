@@ -14,7 +14,7 @@ $(document).ready(function(){
     $('.move').click(function(){
       clear();
       textblock.append('<p>you see a mysterious shape moving in the distance</p>');
-
+      command.append('<button class="move btn">check your door is locked</button> <button class="stay btn">remain still and try to get a closer look</button>');
     })
 
     $('.stay').click(function(){
@@ -24,6 +24,7 @@ $(document).ready(function(){
       $('.move').click(function(){
         clear();
         textblock.append('<p>you see a mysterious shape moving in the distance</p>');
+        command.append('<button class="move btn">check your door is locked</button> <button class="stay btn">remain still and try to get a closer look</button>')
       })
     })
   })
