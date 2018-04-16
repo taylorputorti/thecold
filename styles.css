@@ -3,17 +3,8 @@ body {
     font-family: 'Gugi', cursive;
 }
 
-h1 {
-    font-size: 70px;
-    margin: 0.2em;
-}
-
-h2 {
-    margin: 1em 0 0.25em;
-}
-
-h2:first-of-type {
-    margin-top: 0.5em;
+p {
+  font-size: 1.5em;
 }
 
 .jumbotron {
@@ -22,7 +13,9 @@ h2:first-of-type {
   background-repeat: no-repeat;
   opacity: .6;
 }
-
+.btn {
+  font-size: 90px;
+}
 #title {
   color: black;
   text-shadow: 2px 2px white;
