@@ -173,10 +173,14 @@ $(document).ready(function(){
       $('.move').click(function(){
         clear();
         windowView();
+        fadeLoop();
+        buttonFade();
         //DECISION 2A
         $('.move').click(function(){
           clear();
           lockDoor();
+          fadeLoop();
+          buttonFade();
         })// decision 2a
         //DECISION 2B
         $('.stay').click(function(){
