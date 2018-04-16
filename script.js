@@ -15,7 +15,7 @@ $(document).ready(function(){
     $('button').hide().fadeIn(8000);
   }
 
-//text snips
+//function blocks
   var windowView = function(){
     textblock.append('<p>you see a mysterious shape moving in the distance</p>');
     command.append('<button class="move btn">check your door is locked</button> <button class="stay btn">remain still and try to get a closer look</button>');
@@ -50,6 +50,7 @@ $(document).ready(function(){
   }
   //command.append('<button class="move btn"></button><button class="stay btn"></button>')
 
+//decision tree
   $('#start').click(function(){
     command.empty();
     textblock.append('<p id="one">it has started snowing</p><p id="two">you can see the flurries outside your living room window</p><p id="three">strange things have been happening since winter started</p><p id="four">people going missing and disturbing noises in the night</p>');
@@ -67,34 +68,48 @@ $(document).ready(function(){
       $('.stay').click(function(){
         clear();
         windowCloser();
+        fadeLoop();
+        buttonFade();
         //DECISION 2A
         $('.move').click(function(){
           clear();
           fetchGun();
+          fadeLoop();
+          buttonFade();
           //DECISION 3A
            $('.move').click(function(){
              clear();
              barricadeWindow();
+             fadeLoop();
+             buttonFade();
            }) // decision 3a
           //DECISION 3B
           $('.stay').click(function(){
             clear();
             hillView();
+            fadeLoop();
+            buttonFade();
           }) //decision 3b
         }) // decision 2a
         //DECISION 2B
         $('.stay').click(function(){
           clear();
           windowCloser();
+          fadeLoop();
+          buttonFade();
           //DECISION 3A
           $('.move').click(function(){
             clear();
             fetchGun();
+            fadeLoop();
+            buttonFade();
           }) // decision 3a
           //DECISION 3B
           $('.stay').click(function(){
             clear();
             barricadeWindow();
+            fadeLoop();
+            buttonFade();
           }) // decision 3b
         }) //decision 2b
       }) // decision 1a
@@ -102,34 +117,48 @@ $(document).ready(function(){
       $('.move').click(function(){
         clear();
         lockDoor();
+        fadeLoop();
+        buttonFade();
         //DECISION 2A
         $('.move').click(function(){
           clear();
           fetchGun();
+          fadeLoop();
+          buttonFade();
           //DECISION 3A
           $('.move').click(function(){
             clear();
             barricadeWindow();
+            fadeLoop();
+            buttonFade();
           }) // decision 3a
           //DECISION 3B
           $('.stay').click(function(){
             clear();
             hillView();
+            fadeLoop();
+            buttonFade();
           })
         }) // decision 2a
         //  DECISION 2B
         $('.stay').click(function(){
           clear();
           windowReturn();
+          fadeLoop();
+          buttonFade();
           //DECISION 3A
           $('.move').click(function(){
             clear();
             upStairs();
+            fadeLoop();
+            buttonFade();
           }) // decision 3a
           //DECISION 3B
           $('.stay').click(function(){
             clear();
             barricadeWindow();
+            fadeLoop();
+            buttonFade();
           }) // decision 3b
         }) // decision 2b
       }) //decision 1b
